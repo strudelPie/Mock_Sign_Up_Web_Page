@@ -1,0 +1,139 @@
+:root {
+    --input-color: rgb(64,64,64,0.3);
+    --focus-color: #e6007e;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+body, .image, .logo-bar, main {
+    display: flex;
+}
+
+.image .logo-bar {
+    width: 35vw;
+}
+
+.image {
+    background-image: url(./woodland.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    align-items: flex-end;
+}
+
+.logo-bar {
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0, 0.5);
+    position: relative;
+    bottom: 25vh;
+}
+
+.logo {
+    height: 15vh;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+main {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content, .input-container, .submit-container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.content {
+    font-size: 2rem;
+}
+
+.input {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+input {
+    background-color: var(--input-color);
+    border: 0.5px solid rgb(88,88,88);
+    border-radius: 4px;
+    width: 350px;
+    height: 30px;
+}
+
+.input-container {
+    background-color: var(--input-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.input-container > p {
+    margin:0;
+    margin-bottom: 15px;
+}
+
+.form-cell {
+    display: flex;
+    flex-flow: column;
+    padding-right: 40px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--focus-color);
+}
+
+button{
+    background-color: black;
+    color: var(--focus-color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--focus-color);
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+button:hover{
+    background-color: var(--focus-color);
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: var(--focus-color);
+    font-weight: 700;
+}
+
+a:hover{
+    color: white;
+}
+
+.submit-container > p {
+    font-size: 1.2rem;
+}
+
+
+
+
+
