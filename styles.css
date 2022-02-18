@@ -2,6 +2,7 @@
     --input-color: rgb(64,64,64,0.3);
     --focus-color: #e6007e;
 }
+
 body {
     margin:0;
     padding:0;
@@ -45,8 +46,6 @@ h1 {
     font-size: 5rem;
     font-family: 'Amatic SC', cursive;
 }
-
-
 
 main {
     flex-direction: column;
